@@ -1,4 +1,7 @@
 
+FROM ubuntu:18.04
+RUN apt install python3-pip
+RUN pip install pymysql
 FROM rasa/rasa:latest-full 
 
 WORKDIR /app
