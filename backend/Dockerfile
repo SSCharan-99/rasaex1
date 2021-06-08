@@ -1,10 +1,11 @@
+RUN sudo pip3 install pymysql
 FROM rasa/rasa:latest-full 
 
 WORKDIR /app
 COPY . /app
 COPY ./data /app/data
 
-RUN sudo pip3 install pymysql
+
 
 
 VOLUME /app
