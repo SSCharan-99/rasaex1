@@ -6,5 +6,7 @@ USER root
 
 RUN pip3 install recognizers-text-suite
 
+RUN sudo apt-get install python-mysqldb
+
 # Switch back to a non-root user
 USER 1001
