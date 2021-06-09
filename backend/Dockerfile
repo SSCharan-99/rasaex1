@@ -2,7 +2,7 @@
 FROM rasa/rasa:latest-full 
 USER root
 RUN pip3 install pymysql
-RUN pip3 install mysql-python
+
 RUN pip3 install mysqlclient
 FROM rasa/rasa:latest-full 
 
