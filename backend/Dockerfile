@@ -1,6 +1,6 @@
 
-FROM ubuntu:18.04
-
+FROM rasa/rasa:latest-full 
+USER root
 RUN pip install pymysql
 FROM rasa/rasa:latest-full 
 
